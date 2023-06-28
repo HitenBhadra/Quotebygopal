@@ -9,12 +9,14 @@ q=qd[0]['content']
 st.set_page_config(
         page_title="Quote of the day",
 )
-a=True
-while a:
-  a=False
+c=1
+while c==1:
+  c=0
   st.title('Quote of the day')
   st.write(f'{q} \n - Gopal')
-  a=st.button('New quote')
+  if st.button('New quote'):
+    c=1
+      
 
 
 
