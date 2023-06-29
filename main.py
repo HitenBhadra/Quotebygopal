@@ -41,6 +41,8 @@ def dictionary():
 st.subheader('Dictionary')
 t1=thr.Thread(target=quote)
 t2=thr.Thread(target=dictionary)
+t1.start()
+t2.start()
 
 
 
