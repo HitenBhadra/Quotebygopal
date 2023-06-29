@@ -30,7 +30,7 @@ def quote():
             word=st.text_input('Enter word to search','query',key='placeholder')
             dapi=requests.get(f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}")
             dd=dapi.json()                    
-            st.write(f'{dd})
+            st.write(f'{dd}')
             f=st.button('Reset')
             f=False
             if l:
