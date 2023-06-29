@@ -28,7 +28,7 @@ def quote():
         while f==1:
             f=0
             word=st.text_input('Enter word to search','query',key='placeholder')
-           dapi=requests.get(f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}")
+            dapi=requests.get(f"https://api.dictionaryapi.dev/api/v2/entries/en/{word}")
             dd=dapi.json()
             for d in dd:
         
